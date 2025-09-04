@@ -1,0 +1,64 @@
+* {
+	margin: 0;
+	padding: 0;
+}
+.carTable {
+	width: 100%;
+	text-align: left;
+}
+.carTable,
+.carTable th,
+.carTable td {
+	border-collapse: collapse;
+	height: 40px;
+	padding: 1rem;
+}
+
+.carTable thead {
+	background-color: black;
+	color: white;
+}
+.carTable th {
+	font-family: "Libertinus Sans", sans-serif;
+	font-weight: bolder;
+	font-style: italic;
+	transition: 2s;
+}
+.carTable th:hover {
+	color: green;
+	cursor: pointer;
+}
+
+.carName {
+	text-align: center;
+}
+
+.carTable tbody tr:nth-child(odd) {
+	background-color: rgb(167, 158, 158);
+}
+
+.carTable td {
+	transition: 1.5s;
+}
+
+.carTable td:hover {
+	color: red;
+	cursor: pointer;
+	font-size: 20px;
+	transform: rotate(5deg);
+}
+.fa-car-side:hover {
+	animation: fa-spin 2s linear infinite;
+}
+.fa-tag:hover {
+	animation: fa-spin 2s linear infinite;
+}
+.fa-calendar-week:hover {
+	animation: fa-spin 2s linear infinite;
+}
+
+@media screen and (max-width: 640px) {
+	.carTable {
+		text-align: center;
+	}
+}
